@@ -1,40 +1,154 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <title>Présentation</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      background-color: #f4f4f4;
-    }
-    .container {
-      background-color: white;
-      width: 60%;
-      margin: 100px auto;
-      padding: 30px;
-      text-align: center;
-      border-radius: 8px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    }
-    h1 {
-      color: #333;
-    }
-    p {
-      font-size: 18px;
-      color: #555;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <title>Accueil - Développement Web</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body {
+            background-color: #ffffff;
+        }
+
+        /* ===== NAVBAR ===== */
+        .navbar {
+            background-color: #282A35;
+            padding: 14px 25px;
+            display: flex;
+            align-items: center;
+        }
+
+        .logo {
+            color: #f7a8c9;
+            font-size: 22px;
+            font-weight: bold;
+            margin-right: 30px;
+            text-decoration: none;
+        }
+
+        .menu a {
+            color: white;
+            text-decoration: none;
+            margin-right: 20px;
+            font-size: 16px;
+        }
+
+        .menu a:hover {
+            text-decoration: underline;
+        }
+
+        /* ===== HEADER INFO ===== */
+        .header-info {
+            background-color: #f2f2f2;
+            text-align: center;
+            padding: 20px;
+            font-size: 17px;
+            line-height: 1.8;
+        }
+
+        /* ===== MAIN ===== */
+        .main {
+            text-align: center;
+            padding: 60px 20px;
+        }
+
+        .main h1 {
+            font-size: 48px;
+            margin-bottom: 15px;
+        }
+
+        .main p {
+            font-size: 20px;
+            color: #555;
+            margin-bottom: 30px;
+        }
+
+        /* ===== IMAGE ===== */
+        .image-container img {
+            width: 100%;
+            max-width: 500px;
+            border-radius: 12px;
+            box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+            margin-bottom: 40px;
+        }
+
+        /* ===== MENU VERTICAL À DROITE ===== */
+        .side-menu {
+            position: fixed;
+            right: 20px;
+            top: 50%;
+            transform: translateY(-50%);
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .side-menu a {
+            background-color: #f7a8c9;
+            color: white;
+            text-decoration: none;
+            padding: 12px 18px;
+            border-radius: 8px;
+            font-size: 16px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+            transition: background-color 0.3s;
+        }
+
+        .side-menu a:hover {
+            background-color: #f38bb5;
+        }
+    </style>
 </head>
+
 <body>
-  <div class="container">
-    <h1>Bonjour</h1>
-    <p>
-      Je m'appelle <strong>CHAHED Yasmine</strong>, élève de la deuxième année d’IA.
-    </p>
-    <p>
-      Code Apogée : <strong>24002686</strong>
-    </p>
-  </div>
+
+    <!-- NAVBAR -->
+    <div class="navbar">
+        <a href="#" class="logo">Accueil</a>
+        <div class="menu">
+            <a href="#">HTML</a>
+            <a href="#">CSS</a>
+            <a href="#">JavaScript</a>
+            <a href="#">Python</a>
+            <a href="#">SQL</a>
+        </div>
+    </div>
+
+    <!-- TEXTE EN HAUT -->
+    <div class="header-info">
+        <div>Bonjour</div>
+        <div>Je m'appelle <strong>CHAHED Yasmine</strong>, élève de la deuxième année d’IA.</div>
+        <div><strong>Code Apogée :</strong> 24002686</div>
+    </div>
+
+    <!-- CONTENU PRINCIPAL -->
+    <div class="main">
+        <h1>Apprendre Développement Web</h1>
+        <p>HTML, CSS, JavaScript et plus encore</p>
+
+        <div class="image-container">
+            <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c"
+                 alt="Étudiants travaillant sur des ordinateurs">
+        </div>
+    </div>
+
+    <!-- MENU VERTICAL DROIT -->
+    <div class="side-menu">
+        <a href="#"> Rechercher</a>
+        <a href="#"> Cours</a>
+        <a href="#"> Exercices</a>
+        <a href="#"> Examens</a>
+        <a href="#"> TP</a>
+    </div>
+
 </body>
 </html>
+images.unsplash.com
+Write to Yasmine Chahed
